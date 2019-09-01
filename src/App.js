@@ -14,7 +14,6 @@ class App extends Component {
   state = {
     searchBarInput: "",
     city: "",
-    country: "",
     temperature: "",
     conditions: "",
     date: "",
@@ -44,8 +43,9 @@ class App extends Component {
           if (data.cod === 200) {
             console.log(data);
             this.setState({
+              city: data.name,
               temperature: data.main.temp,
-              conditions: data.weather[0].main,
+              conditions: data.weather[0].description,
               loading: false
             });
           } else {
@@ -72,6 +72,14 @@ class App extends Component {
       content = <SyncLoader />;
     } else if (this.state.error) {
       content = <ErrorDisplay />;
+    } else if (this.state.temperature !== "") {
+      content = (
+        <WeatherDetails
+          city={this.state.city}
+          temperature={this.state.temperature}
+          conditions={this.state.conditions}
+        />
+      );
     }
 
     return (

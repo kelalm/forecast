@@ -1,22 +1,12 @@
 import React, { Component } from "react";
 
 export default class WeatherDetails extends Component {
-  state = {
-    city: "",
-    country: "",
-    temperature: "",
-    conditions: "",
-    date: ""
-  };
-
   render() {
     return (
       <div>
-        <h1>City</h1>
-        <h2>Country</h2>
-        <h3>Temperature</h3>
-        <h3>Conditions</h3>
-        <h3>Date and Local Time</h3>
+        <h4>{this.props.city}</h4>
+        <h1>{Math.round(this.props.temperature)}°F</h1>
+        <h2>{this.props.conditions}</h2>
       </div>
     );
   }
