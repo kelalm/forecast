@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import WeatherDetails from "./components/WeatherDetails";
 import DefaultContent from "./components/DefaultContent";
+import ErrorDisplay from "./components/ErrorDisplay";
 
 class App extends Component {
   state = {
@@ -41,6 +42,7 @@ class App extends Component {
         .then(data => {
           // If city exists, update weather details
           if (data.cod === 200) {
+            console.log(data);
             this.setState({
               temperature: data.main.temp,
               conditions: data.weather[0].main,
@@ -68,6 +70,8 @@ class App extends Component {
 
     if (this.state.loading) {
       content = <SyncLoader />;
+    } else if (this.state.error) {
+      content = <ErrorDisplay />;
     }
 
     return (
