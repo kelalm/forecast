@@ -5,7 +5,7 @@ import "./App.css";
 import { MoonLoader } from "react-spinners";
 
 import Header from "./components/Header";
-import Card from "./components/Card";
+import SearchBar from "./components/SearchBar";
 import WeatherDetails from "./components/WeatherDetails";
 
 class App extends Component {
@@ -39,8 +39,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <SearchBar />
+
         <main className="card">
-          {/* <SearchBar /> */}
           <WeatherDetails />
         </main>
         {/* <Footer /> */}
