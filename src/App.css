@@ -51,3 +51,11 @@
     max-height: 246px;
   }
 }
+
+input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 10px;
+  font-size: 1rem;
+}

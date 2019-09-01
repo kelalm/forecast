@@ -11,10 +11,6 @@ import WeatherDetails from "./components/WeatherDetails";
 class App extends Component {
   state = {
     searchBarInput: "",
-    weatherDetails: {
-      temperature: "",
-      description: ""
-    },
     loading: false,
     error: false
   };
@@ -25,23 +21,26 @@ class App extends Component {
     });
   };
 
-  setWeather = () => {
+  setWeather = e => {
     console.log("Setting weather");
+
     const city = this.state.searchBarInput;
+    console.log(`Setting city to ${city}`);
     const API_KEY = process.env.REACT_APP_API_KEY;
     const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
-    this.setState({ weatherDetails: {}, loading: true, error: false }, () => {
-      // callback function
-    });
+    // this.setState({ weatherDetails: {}, loading: true, error: false }, () => {
+    //   // callback function
+    // });
   };
 
   render() {
     return (
       <div className="App">
         <Header />
-        <SearchBar />
+        <SearchBar setWeather={this.setWeather} />
 
         <main className="card">
+          <MoonLoader />
           <WeatherDetails />
         </main>
         {/* <Footer /> */}
