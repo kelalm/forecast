@@ -8,15 +8,15 @@ export default class SearchBar extends Component {
           <form>
             <label>
               <input type="text" name="name" placeholder="City" />
+              <button
+                type="button"
+                onClick={() => {
+                  this.props.setWeather();
+                }}
+              >
+                Find
+              </button>
             </label>
-            <button
-              type="button"
-              onClick={() => {
-                this.props.setWeather();
-              }}
-            >
-              Find
-            </button>
           </form>
         </h2>
       </div>
