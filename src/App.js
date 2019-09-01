@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 
+import "./App.css";
+
 import { MoonLoader } from "react-spinners";
-import classes from "./App.module.css";
+
+import Header from "./components/Header";
+import Card from "./components/Card";
+import WeatherDetails from "./components/WeatherDetails";
 
 class App extends Component {
   state = {
@@ -32,18 +37,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className={classes.AppWrapper}>
-        <h1>Head Stuff</h1>
-        {/* <Header /> */}
-        <main className={classes.AppMain}>
-          <h6>Main Stuff</h6>
-          {/* <SearchBar />
-          <Card>
-            <WeatherDetails /> */}
-          {/* <MoonLoader /> */}
-          {/* <Preview /> */}
-          {/* <ErrorNotice /> */}
-          {/* </Card> */}
+      <div className="App">
+        <Header />
+        <main className="card">
+          {/* <SearchBar /> */}
+          <WeatherDetails />
         </main>
         {/* <Footer /> */}
       </div>
