@@ -68,19 +68,27 @@ body {
   font-size: 3rem;
 }
 
-.Header h1 {
-  font-weight: bold;
+.Header {
+  color: var(--color-grey-light-1);
+}
+
+.appLabel {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.subAppLabel {
+  font-size: 1.5rem;
 }
 
 .card {
   display: flex;
-  justify-content: center;
   align-items: center;
   background: #f6f5fa;
   width: 100%;
-  max-width: 280px;
+  min-width: 80%;
   height: 100%;
-  max-height: 400px;
+  min-height: 300px;
   margin: 0 auto;
   border-radius: 20px;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
@@ -100,6 +108,8 @@ input[type="text"] {
   padding: 10px;
   font-size: 2rem;
   color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 *:focus {
@@ -114,5 +124,25 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-size: 2rem;
+}
+
+.infoLabels {
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 4rem;
+}
+
+.cityLabel {
+  font-size: 3rem;
+}
+
+.temperatureLabel {
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--color-grey-dark-1);
+}
+
+.conditionsLabel {
   font-size: 2rem;
 }

@@ -18,10 +18,12 @@ export default class WeatherDetails extends Component {
       conditionImage = <Clear />;
     }
     return (
-      <div>
-        <h4>{this.props.city}</h4>
-        <h1>{Math.round(this.props.temperature)}°F</h1>
-        <h2>{conditionsText}</h2>
+      <div className="infoLabels">
+        <p className="cityLabel">{this.props.city}</p>
+        <p className="temperatureLabel">
+          {Math.round(this.props.temperature)}°F
+        </p>
+        <p className="conditionsLabel">{conditionsText}</p>
         {conditionImage}
       </div>
     );
