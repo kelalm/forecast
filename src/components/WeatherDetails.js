@@ -24,7 +24,7 @@ export default class WeatherDetails extends Component {
           {Math.round(this.props.temperature)}°F
         </p>
         <p className="conditionsLabel">{conditionsText}</p>
-        {conditionImage}
+        <div className="imageBox">{conditionImage}</div>
       </div>
     );
   }
