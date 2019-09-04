@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/forecast/static/css/main.0ce1a807.chunk.css",
+    "main.js": "/forecast/static/js/main.ef0e7a1d.chunk.js",
+    "main.js.map": "/forecast/static/js/main.ef0e7a1d.chunk.js.map",
+    "runtime~main.js": "/forecast/static/js/runtime~main.a4a3ed72.js",
+    "runtime~main.js.map": "/forecast/static/js/runtime~main.a4a3ed72.js.map",
+    "static/js/2.b1f23091.chunk.js": "/forecast/static/js/2.b1f23091.chunk.js",
+    "static/js/2.b1f23091.chunk.js.map": "/forecast/static/js/2.b1f23091.chunk.js.map",
+    "index.html": "/forecast/index.html",
+    "precache-manifest.b5e8477da90571ef19510c0fdda48800.js": "/forecast/precache-manifest.b5e8477da90571ef19510c0fdda48800.js",
+    "service-worker.js": "/forecast/service-worker.js",
+    "static/css/main.0ce1a807.chunk.css.map": "/forecast/static/css/main.0ce1a807.chunk.css.map",
+    "static/media/Clear.f963a166.svg": "/forecast/static/media/Clear.f963a166.svg",
+    "static/media/Clouds.a98369fb.svg": "/forecast/static/media/Clouds.a98369fb.svg",
+    "static/media/Preview.29a0aca0.svg": "/forecast/static/media/Preview.29a0aca0.svg",
+    "static/media/Rain.b5e8855f.svg": "/forecast/static/media/Rain.b5e8855f.svg"
+  }
+}
