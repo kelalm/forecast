@@ -5,9 +5,19 @@ export default class SearchBar extends Component {
     return (
       <div>
         <h2>
-          <form>
+          <form
+            onSubmit={e => {
+              e.preventDefault();
+              this.props.setWeather();
+            }}
+          >
             <label>
-              <input type="text" name="name" placeholder="City" />
+              <input
+                type="text"
+                name="name"
+                placeholder="City"
+                id="search-bar"
+              />
               <button
                 type="button"
                 onClick={() => {

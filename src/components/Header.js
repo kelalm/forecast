@@ -5,7 +5,7 @@ export default function Header() {
     <div className="Header">
       <p className="appLabel">Forecast</p>
       <p className="subAppLabel">
-        Search for any city. Discover their weather. View the forecast.
+        Search for any city. Discover their weather.
       </p>
     </div>
   );
